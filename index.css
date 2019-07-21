@@ -1,0 +1,22 @@
+.bg-rocket {
+    background: url("img/rocket_launch.jpg") no-repeat;
+    background-size: cover;
+}
+
+.text-blue {
+   color: #6dabe4;
+}
+
+.text-navy {
+    color: #001689;
+}
+
+@media(min-width: 960px) {
+    .carousel-inner .carousel-section {
+        height: 86vh !important;
+    }
+}
+
+.bottom-links {
+    font-size: 1.25rem;
+}
