@@ -8,10 +8,23 @@ html,body {
   }
   p{
     font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
   }
   h1, h2, h3, h4, h5 {
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
+  }
+  a {
+    color: #6dabe4;
+  }
+  a:hover {
+    color: #001689;
+  }
+  .btn-info {
+    background-color: #6dabe4;
+  }
+  .btn-info:hover {
+    background-color: #001689;
   }
 
 @media(max-width: 700px) {
@@ -22,6 +35,7 @@ html,body {
         font-size: 1.2rem;
     }
 }
+
 .bg-rocket {
     background: url("img/rocket_launch.jpg") no-repeat;
     background-size: cover;
@@ -30,6 +44,7 @@ html,body {
 .bg-img {
     position: relative;
     overflow: hidden;
+    background-color: transparent;
 }
 .bg-img h2, .bg-img h1 {
     position: relative;
@@ -44,7 +59,22 @@ html,body {
     width: auto;
     height: 100%;
     opacity: 0.6;
+    z-index: 0;
 }
+
+.bg-img a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.bg-img a:hover{
+    background-color: hsla(0, 100%, 100%, .5);
+  }
 
 @media(min-width: 900px) {
     .bg-img img {
@@ -99,10 +129,17 @@ html,body {
 
 .carousel-caption {
     margin-bottom: 12rem;
-    background-color: hsl(230, 100%, 27%, .4);
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
+}
+
+.bg-clearblue {
+    background-color: hsla(230, 100%, 27%, .4);
+}
+
+.bg-clearwhite {
+    background-color: hsla(0, 100%, 100%, .5) 
 }
 
 .faded {
