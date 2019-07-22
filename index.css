@@ -1,10 +1,29 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-display: auto;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+  }
+
+@media(max-width: 700px) {
+    .h2, .h3, .h1{
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
 .bg-rocket {
     background: url("img/rocket_launch.jpg") no-repeat;
-    background-size: cover;
-}
-
-.bg-realtime {
-    background: url("img/real-time.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -12,7 +31,7 @@
     position: relative;
     overflow: hidden;
 }
-.bg-img h2 {
+.bg-img h2, .bg-img h1 {
     position: relative;
     margin-top: 10.5rem;
     z-index: 2;
@@ -80,7 +99,10 @@
 
 .carousel-caption {
     margin-bottom: 12rem;
-    background-color: hsl(230, 100%, 27%, .4)
+    background-color: hsl(230, 100%, 27%, .4);
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
 }
 
 .faded {
@@ -95,7 +117,7 @@
 }
 
 .img-medium {
-    height: 15rem;
+    height: 18rem;
     width: 100%;
     object-fit: cover;
 }
