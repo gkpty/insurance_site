@@ -6,6 +6,13 @@ html,body {
     font-family: 'Montserrat', sans-serif;
     font-display: auto;
   }
+  section, header {
+    overflow-x: hidden;
+}
+
+.header {
+    margin-top: 8rem;
+}
   p{
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -13,6 +20,11 @@ html,body {
   h1, h2, h3, h4, h5 {
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
+  }
+  #countdown-timer {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    min-height: 2.5rem;
   }
   a {
     color: #6dabe4;
@@ -50,6 +62,14 @@ html,body {
     position: relative;
     margin-top: 10.5rem;
     z-index: 2;
+}
+
+.image-still {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
 }
 
 .bg-img img {
@@ -122,7 +142,7 @@ html,body {
 }
 
 .carousel-img {
-    height: 38rem;
+    height: 30rem;
     object-fit: cover;
 
 }
@@ -158,3 +178,67 @@ html,body {
     width: 100%;
     object-fit: cover;
 }
+
+ul.social-buttons {
+    margin-bottom: 0;
+  }
+  
+  ul.social-buttons li a {
+    display: inline-block;
+    color: white;
+    background-color: #6dabe4;
+    opacity: .8;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+    background-color: #001689;
+  }
+  
+  .social-buttons li {
+    pointer-events: auto !important;
+  }
+  
+  .social-row {
+    position: fixed; 
+    z-index: 2; 
+    top: 90vh;
+    pointer-events: none;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+  }
+  
+  @media (min-width: 500px) {
+    ul.social-buttons li a {
+      font-size: 1.5rem;
+      line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+    }
+  
+  }
+  
+  @media (min-width: 800px) {
+    .social-row {
+      right: 0px;
+      margin-bottom: 2rem;
+      top: 60vh;
+      padding: 0px;
+      display: block;
+      width: 0%;
+      left: 0%;
+      margin-left: auto;
+      margin-right: 10%;
+      }
+    ul.social-buttons li a {
+        margin-bottom: 6px;
+    }
+    header.masthead {
+        height: 56vh;
+    }
+  }
