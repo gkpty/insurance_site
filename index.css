@@ -9,7 +9,9 @@ html,body {
   section, header {
     overflow-x: hidden;
 }
-
+.soon-section {
+  min-height: 75vh;
+}
 .header {
     margin-top: 8rem;
 }
@@ -23,8 +25,8 @@ html,body {
   }
   #countdown-timer {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2.5rem;
-    min-height: 2.5rem;
+    font-size: 2.2rem;
+    min-height: 2.2rem;
   }
   a {
     color: #6dabe4;
@@ -148,6 +150,45 @@ html,body {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.card img{
+  object-fit: cover;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bg-clearblue {
