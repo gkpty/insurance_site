@@ -50,8 +50,8 @@ html,body {
     }
 }
 
-.bg-rocket {
-    background: url("img/rocket_launch.jpg") no-repeat;
+.bg-family {
+    background: url("img/family.jpg") no-repeat;
     background-size: cover;
 }
 
