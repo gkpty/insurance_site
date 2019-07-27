@@ -113,6 +113,10 @@ html,body {
     color: #001689 !important;
 }
 
+.text-blue {
+  color: #6dabe4;
+}
+
 .text-red {
     color: #c33a32;
 }
@@ -200,7 +204,7 @@ html,body {
 }
 
 .faded {
-    opacity: .6;
+    opacity: .7;
 }
 
 .text-bottom {
