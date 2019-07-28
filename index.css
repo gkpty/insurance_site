@@ -51,7 +51,7 @@ html,body {
 }
 
 .bg-family {
-    background: url("img/family.jpg") no-repeat;
+    background: url("img/pier_fam.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -111,6 +111,10 @@ html,body {
 
 .text-navy {
     color: #001689 !important;
+}
+
+.text-blue {
+  color: #6dabe4;
 }
 
 .text-red {
@@ -200,7 +204,7 @@ html,body {
 }
 
 .faded {
-    opacity: .6;
+    opacity: .7;
 }
 
 .text-bottom {
