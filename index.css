@@ -9,12 +9,14 @@ html,body {
   section, header {
     overflow-x: hidden;
 }
-
+.soon-section {
+  min-height: 75vh;
+}
 .header {
     margin-top: 8rem;
 }
   p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
   }
   h1, h2, h3, h4, h5 {
@@ -23,8 +25,8 @@ html,body {
   }
   #countdown-timer {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2.5rem;
-    min-height: 2.5rem;
+    font-size: 2.2rem;
+    min-height: 2.2rem;
   }
   a {
     color: #6dabe4;
@@ -48,8 +50,8 @@ html,body {
     }
 }
 
-.bg-rocket {
-    background: url("img/rocket_launch.jpg") no-repeat;
+.bg-family {
+    background: url("img/pier_fam.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -78,7 +80,6 @@ html,body {
     top: 0;
     width: auto;
     height: 100%;
-    opacity: 0.6;
     z-index: 0;
 }
 
@@ -88,7 +89,6 @@ html,body {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
     z-index: 2;
 }
 
@@ -109,6 +109,14 @@ html,body {
 
 .text-navy {
     color: #001689 !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.text-blue {
+  color: #6dabe4;
 }
 
 .text-red {
@@ -133,37 +141,129 @@ html,body {
 
 @media(min-width: 960px) {
     .carousel-inner .carousel-section {
-        height: 86vh !important;
+        height: 40rem !important;
     }
 }
 
-.bottom-links {
-    font-size: 1.25rem;
-}
-
 .carousel-img {
-    height: 30rem;
+    height: 35rem;
     object-fit: cover;
 
 }
 
-.carousel-caption {
+.caption-bottom-right {
+  margin-bottom: 8rem;
+}
+
+.caption-bottom {
+  margin-bottom: 1rem;
+}
+
+.caption-top-left {
+  margin-bottom: 24rem;
+}
+
+@media(min-width: 600px){
+  .caption-bottom-right {
+    left: 10%;
+    margin-right: -5%;
+    margin-bottom: 1rem;
+  }
+  
+  .caption-bottom {
+    margin-bottom: 1rem;
+  }
+  
+  .caption-top-left {
+    right: 10%;
+    margin-left: -5%;
     margin-bottom: 12rem;
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial;
+  }
+}
+
+@media(min-width: 960px){
+  .caption-bottom-right {
+    left: 52%;
+    margin-right: -12%;
+    margin-bottom: 1rem;
+  }
+  
+  .caption-bottom {
+    margin-bottom: 1rem;
+  }
+  
+  .caption-top-left {
+    right: 40%;
+    margin-left: -10%;
+    margin-bottom: 16rem;
+  }
+}
+.center {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+
+.card img{
+  object-fit: cover;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bg-clearblue {
     background-color: hsla(230, 100%, 27%, .4);
 }
 
-.bg-clearwhite {
-    background-color: hsla(0, 100%, 100%, .5) 
+a.portfolio-box:hover {
+  background-color: 	hsla(240, 100%, 17%, .4);
+  text-decoration: none;
+  color: #fff;
 }
-
-.faded {
-    opacity: .6;
+.portfolio-box {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.portfolio-box img {
+  object-fit: cover;
+  height: 420px;
+  width: 100%;
 }
 
 .text-bottom {
